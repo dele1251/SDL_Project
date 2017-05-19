@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Color.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -25,6 +22,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ISDLWidgetClickable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ISDLWidgetTextable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SDLApp.h">
@@ -36,9 +36,11 @@
     <ClInclude Include="SDLTextWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ISDLWidgetTextable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Color.cpp">
@@ -54,6 +56,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SDLTextWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ISDLWidgetClickable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

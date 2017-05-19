@@ -18,17 +18,10 @@ public:
   // must not call clickEventHandler()
   virtual bool clicked (int x, int y) = 0;
   
-  virtual void registerClickEventHandler (
-    std::function<void (void)> cFunction)
-  { mcClickHandler = cFunction;}
+  virtual void registerClickEventHandler (std::function<void (void)> cFunction);
+  
 
-  virtual void clickEventHandler()
-  {
-    if (nullptr!=mcClickHandler)
-    { 
-      mcClickHandler ();
-    }
-  }
+  virtual void clickEventHandler ();
 
 private:
   std::function<void (void)>

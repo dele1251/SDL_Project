@@ -18,10 +18,30 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ISDLWidget.h" />
+    <ClInclude Include="ISDLWidgetClickable.h" />
+    <ClInclude Include="ISDLWidgetTextable.h" />
+    <ClInclude Include="SDLApp.h" />
+    <ClInclude Include="SDLSprite.h" />
+    <ClInclude Include="SDLTextWidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Color.cpp" />
+    <ClCompile Include="ISDLWidgetClickable.cpp" />
+    <ClCompile Include="ISDLWidgetTextable.cpp" />
+    <ClCompile Include="SDLApp.cpp" />
+    <ClCompile Include="SDLSprite.cpp" />
+    <ClCompile Include="SDLTextWidget.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{376E641B-09CE-4FD2-887D-4E41AAB3BF93}</ProjectGuid>
+    <ProjectGuid>{427159F4-B2B6-4B88-93D3-5D687D5383B3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>SDLApp2</RootNamespace>
+    <RootNamespace>SDLApp</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -71,7 +91,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>c:\Program Files (x86)\SDL2.0.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>c:\program files (x86)\SDL2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>c:\Program files (x86)\SDL2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -136,25 +156,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Color.h" />
-    <ClInclude Include="ISDLWidget.h" />
-    <ClInclude Include="ISDLWidgetClickable.h" />
-    <ClInclude Include="ISDLWidgetTextable.h" />
-    <ClInclude Include="SDLApp.h" />
-    <ClInclude Include="SDLSprite.h" />
-    <ClInclude Include="SDLTextWidget.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Color.cpp" />
-    <ClCompile Include="ISDLWidgetTextable.cpp" />
-    <ClCompile Include="SDLApp.cpp" />
-    <ClCompile Include="SDLSprite.cpp" />
-    <ClCompile Include="SDLTextWidget.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
