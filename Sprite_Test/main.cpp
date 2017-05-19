@@ -1,9 +1,9 @@
 #include <iostream>
 #include "SpriteTest.h"
+#include <SDL.h>
 
-int main ()
+int main (int argc, char *args[])
 {
-  //SpriteTest* pcSpriteTest = new SpriteTest ();
 
   return EXIT_SUCCESS;
 }

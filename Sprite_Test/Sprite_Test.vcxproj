@@ -25,6 +25,11 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="SpriteTest.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SDLApp\SDLApp.vcxproj">
+      <Project>{427159f4-b2b6-4b88-93d3-5d687d5383b3}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{916ADD42-0259-441F-82D7-7B1507CF02F4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -79,7 +84,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(SolutionDir)\SDLApp;c:\Program Files (x86)\SDL2.0.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)\SDLApp\Debug;c:\Program files (x86)\SDL2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+    <LibraryPath>c:\Program files (x86)\SDL2.0.3\lib\x86;$(SolutionDir)\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -102,7 +107,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_gfx.lib;SDL2_ttf.lib;Color.obj;ISDLWidgetClickable.obj;ISDLWidgetTextable.obj;SDLSprite.obj;SDLTextWidget.obj;SDLApp.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDLApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">

@@ -17,6 +17,7 @@
 #include "ISDLWidgetTextable.h"
 #include "ISDLWidgetClickable.h"
 
+
 class SDLTextWidget;
 class SDLSprite;
 
