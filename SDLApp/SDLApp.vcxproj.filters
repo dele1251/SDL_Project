@@ -30,10 +30,10 @@
     <ClInclude Include="SDLApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDLSprite.h">
+    <ClInclude Include="SDLTextWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SDLTextWidget.h">
+    <ClInclude Include="SDLSpriteWidget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -52,13 +52,13 @@
     <ClCompile Include="SDLApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SDLSprite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="SDLTextWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ISDLWidgetClickable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SDLSpriteWidget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

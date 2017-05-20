@@ -24,7 +24,7 @@
     <ClInclude Include="ISDLWidgetClickable.h" />
     <ClInclude Include="ISDLWidgetTextable.h" />
     <ClInclude Include="SDLApp.h" />
-    <ClInclude Include="SDLSprite.h" />
+    <ClInclude Include="SDLSpriteWidget.h" />
     <ClInclude Include="SDLTextWidget.h" />
   </ItemGroup>
   <ItemGroup>
@@ -35,7 +35,7 @@
     <ClCompile Include="ISDLWidgetClickable.cpp" />
     <ClCompile Include="ISDLWidgetTextable.cpp" />
     <ClCompile Include="SDLApp.cpp" />
-    <ClCompile Include="SDLSprite.cpp" />
+    <ClCompile Include="SDLSpriteWidget.cpp" />
     <ClCompile Include="SDLTextWidget.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

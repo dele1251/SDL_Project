@@ -1,6 +1,6 @@
 //****************************************************************************
 // File name:	 SDLSprite.h
-// Author:     Chadd Williams
+// Author:     Chadd Williams modified by Ernesto De Leon
 // Date:       3/30/2017
 // Class:      CS 485
 // Assignment: SDLApp2
@@ -13,12 +13,12 @@
 #include "ISDLWidgetClickable.h"
 #include "ISDLWidget.h"
 
-class SDLSprite : public ISDLWidgetClickable, public ISDLWidget
+class SDLSpriteWidget : public ISDLWidgetClickable, public ISDLWidget
 {
 public:
 
-  SDLSprite () = default;
-  SDLSprite (SDLApp *pcApp, std::string spriteName, int x ,int y);
+  SDLSpriteWidget () = default;
+  SDLSpriteWidget (SDLApp *pcApp, std::string spriteName, int x ,int y);
 
   bool loadSprite (SDLApp *pcApp, std::string spriteName, int x, int y);
 

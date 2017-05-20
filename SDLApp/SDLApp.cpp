@@ -1,6 +1,6 @@
 //****************************************************************************
 // File name:	 SDLApp.cpp
-// Author:     Chadd Williams
+// Author:     Chadd Williams modified by Ernesto De Leon
 // Date:       3/30/2017
 // Class:      CS 485
 // Assignment: SDLApp2
@@ -12,7 +12,7 @@
 #include <iostream>
 #include "SDL_ttf.h"			// true type font
 #include "SDLTextWidget.h"
-#include "SDLSprite.h"
+#include "SDLSpriteWidget.h"
 #include "SDL_image.h"
 #include <algorithm>
 
@@ -319,7 +319,7 @@ bool SDLApp::loadSprite (std::string name, int &w, int & h)
 //
 // Returned:    None
 //***************************************************************************
-void SDLApp::displaySprite (const SDLSprite & rcSprite)
+void SDLApp::displaySpriteWidget (const SDLSpriteWidget & rcSprite)
 {
   SDL_Texture *pTexture;
 

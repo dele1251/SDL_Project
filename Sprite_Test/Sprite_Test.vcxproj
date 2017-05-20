@@ -30,6 +30,9 @@
       <Project>{427159f4-b2b6-4b88-93d3-5d687d5383b3}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="sprite_transparent.bmp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{916ADD42-0259-441F-82D7-7B1507CF02F4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

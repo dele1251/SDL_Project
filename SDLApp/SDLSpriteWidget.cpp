@@ -1,12 +1,12 @@
 //****************************************************************************
 // File name:	 SDLSprite.cpp
-// Author:     Chadd Williams
+// Author:     Chadd Williams modified by Ernesto De Leon
 // Date:       3/30/2017
 // Class:      CS 485
 // Assignment: SDLApp2
 // Purpose:    Provider wrapper for SDL
 //****************************************************************************
-#include "SDLSprite.h"
+#include "SDLSpriteWidget.h"
 
 
 //***************************************************************************
@@ -21,7 +21,7 @@
 //
 // Returned:    None
 //***************************************************************************
-SDLSprite::SDLSprite (SDLApp * pcApp, std::string spriteName, int x, int y)
+SDLSpriteWidget::SDLSpriteWidget (SDLApp * pcApp, std::string spriteName, int x, int y)
 {
 
   loadSprite (pcApp, spriteName, x, y);
@@ -39,7 +39,7 @@ SDLSprite::SDLSprite (SDLApp * pcApp, std::string spriteName, int x, int y)
 //
 // Returned:    True on success, false otherwise
 //***************************************************************************
-bool SDLSprite::loadSprite (SDLApp * pcApp, std::string spriteName,
+bool SDLSpriteWidget::loadSprite (SDLApp * pcApp, std::string spriteName,
   int x, int y)
 {
   mX = x;
@@ -59,7 +59,7 @@ bool SDLSprite::loadSprite (SDLApp * pcApp, std::string spriteName,
 //
 // Returned:    the x coordinate
 //***************************************************************************
-int SDLSprite::getX () const
+int SDLSpriteWidget::getX () const
 {
   return mX;
 }
@@ -73,7 +73,7 @@ int SDLSprite::getX () const
 //
 // Returned:    the y coordinate
 //***************************************************************************
-int SDLSprite::getY () const
+int SDLSpriteWidget::getY () const
 {
   return mY;
 }
@@ -87,7 +87,7 @@ int SDLSprite::getY () const
 //
 // Returned:    the width
 //***************************************************************************
-int SDLSprite::getW () const
+int SDLSpriteWidget::getW () const
 {
   return static_cast<int>(mW * mScale);
 }
@@ -101,7 +101,7 @@ int SDLSprite::getW () const
 //
 // Returned:    the height
 //***************************************************************************
-int SDLSprite::getH () const
+int SDLSpriteWidget::getH () const
 {
   return static_cast<int>(mH * mScale);
 }
@@ -115,7 +115,7 @@ int SDLSprite::getH () const
 //
 // Returned:    the filename
 //***************************************************************************
-std::string SDLSprite::getName () const
+std::string SDLSpriteWidget::getName () const
 {
   return mSpriteName;
 }
@@ -129,9 +129,9 @@ std::string SDLSprite::getName () const
 //
 // Returned:    None
 //***************************************************************************
-void SDLSprite::draw (SDLApp & rcApp) 
+void SDLSpriteWidget::draw (SDLApp & rcApp)
 {
-  rcApp.displaySprite (*this);
+  rcApp.displaySpriteWidget (*this);
 }
 
 //***************************************************************************
@@ -144,7 +144,7 @@ void SDLSprite::draw (SDLApp & rcApp)
 //
 // Returned:    true if the x,y falls inside the sprite
 //***************************************************************************
-bool SDLSprite::clicked (int x, int y)
+bool SDLSpriteWidget::clicked (int x, int y)
 {
   bool bRetVal = false;
   if (x >= mX && x <= mX + mW &&
@@ -167,7 +167,7 @@ bool SDLSprite::clicked (int x, int y)
 //
 // Returned:    None
 //***************************************************************************
-void SDLSprite::setScale (double scale)
+void SDLSpriteWidget::setScale (double scale)
 {
   mScale = scale;
 }
@@ -181,7 +181,7 @@ void SDLSprite::setScale (double scale)
 //
 // Returned:    None
 //***************************************************************************
-void SDLSprite::setRotation (double rotation)
+void SDLSpriteWidget::setRotation (double rotation)
 {
   mRotation = rotation;
 }
@@ -195,7 +195,7 @@ void SDLSprite::setRotation (double rotation)
 //
 // Returned:    the rotation of the sprite
 //***************************************************************************
-double SDLSprite::getRotation () const
+double SDLSpriteWidget::getRotation () const
 {
   return mRotation;
 }

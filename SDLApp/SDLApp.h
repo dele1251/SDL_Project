@@ -1,6 +1,6 @@
 //****************************************************************************
 // File name:	 SDLApp.h
-// Author:     Chadd Williams
+// Author:     Chadd Williams modified by Ernesto De Leon
 // Date:       1/31/2017
 // Class:      CS 485
 // Assignment: 01_Assignment_Shapes
@@ -53,7 +53,7 @@ public:
     int font, int &rW, int &rH);
 
   bool loadSprite (std::string name, int &w, int &h);
-  void displaySprite (const SDLSprite &rcSprite);
+  void displaySpriteWidget (const SDLSpriteWidget &rcSprite);
 
   void gameLoop (unsigned int framesPerSecond = 60);
 

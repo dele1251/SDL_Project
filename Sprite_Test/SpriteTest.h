@@ -14,5 +14,5 @@ public:
   virtual void render ();
 
 private:
-
+  SDLSprite* mCharacter1;
 };
