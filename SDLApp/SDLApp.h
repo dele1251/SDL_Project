@@ -19,7 +19,7 @@
 
 
 class SDLTextWidget;
-class SDLSprite;
+class SDLSpriteWidget;
 
 class SDLApp
 {

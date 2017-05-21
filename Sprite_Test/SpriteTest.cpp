@@ -2,7 +2,7 @@
 
 SpriteTest::SpriteTest ()
 {
-  mCharacter1 = nullptr
+  mCharacter1 = nullptr;
 }
 SpriteTest:: ~SpriteTest ()
 {
@@ -11,7 +11,9 @@ SpriteTest:: ~SpriteTest ()
 
 void SpriteTest::initGame ()
 {
-  mCharacter1 = new SDLSprite (*this,"sprite_transparent.bmp", 100, 100);
+  int width = 256;
+  int height = 32;
+  loadSprite ("test.bmp", width, height);
   
 }
 void SpriteTest::update ()

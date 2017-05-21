@@ -19,10 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Direction2D.h" />
+    <ClInclude Include="MovingSprite.h" />
+    <ClInclude Include="Sprite.h" />
     <ClInclude Include="SpriteTest.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Direction2D.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MovingSprite.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="SpriteTest.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -31,7 +37,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="sprite_transparent.bmp" />
+    <Image Include="test.bmp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{916ADD42-0259-441F-82D7-7B1507CF02F4}</ProjectGuid>
